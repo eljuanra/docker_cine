@@ -54,7 +54,6 @@ jobs:
                 script: |
                     cd ~/deploy
                     sudo chmod 666 /var/run/docker.sock
-                    DAW - Despliegue de aplicaciones web
                     docker compose down || true
                     docker compose pull
                     docker compose up -d
